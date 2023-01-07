@@ -1,0 +1,23 @@
+<div class="calculator">
+
+    <form>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span> 
+            <input id="numerosTxt" [(ngModel)]="numerosTxt" type="text" class="form-control numerosTxt" name="numerosTxt" placeholder="0.0">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span> 
+            <input id="a" [(ngModel)]="a" type="number" class="form-control a" name="a" placeholder="0.0">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <input id="b" [(ngModel)]="b" type="number" class="form-control b" name="b" placeholder="0.0">
+        </div>
+    </form>
+    
+    <button type="button" class="btn btn-primary formula-button" (click)="formula()"><i class="bi-caret-right-fill "></i> Calcular</button>
+</div>
+
+<span class="result">{{ result }}</span>
